@@ -1,0 +1,325 @@
+{
+    "news": {
+        "mainNews": [
+            {
+                "img": "Main1",
+                "date": "09/05/23",
+                "title": "Nintendo celebrates the holidays early with bundles for Mario Kart 8 Deluxe and Animal Crossing: New Horizons",
+                "description": "Nintendo Switch – Mario Kart 8 Deluxe Bundle and Nintendo Switch Lite Systems, Featuring New Animal Crossing: New Horizons- Inspired Design,..."
+            },
+            {
+                "img": "Main2",
+                "date": "09/05/23",
+                "title": "Catch up on what happened at Nintendo Live 2023",
+                "description": "That’s it for the Nintendo Live 2023 event! Whether you joined us in person at the Seattle Convention Center or from home, we hope you had fun! If..."
+            }
+        ],
+        "miniNews": [
+            {
+                "img": "News1",
+                "date": "09/01/23",
+                "title": "Save up to 50% during the Blockbuster Sale!"
+            },
+            {
+                "img": "News2",
+                "date": "09/01/23",
+                "title": "Pluck a free Pikmin 4 calendar wallpaper each month!"
+            },
+            {
+                "img": "News3",
+                "date": "08/31/23",
+                "title": "Celebrate one year of Splatoon 3 (and a brand-new season)!"
+            },
+            {
+                "img": "News4",
+                "date": "08/31/23",
+                "title": "Experience the unexpected in Super Mario Bros. Wonder gameplay presentation"
+            }
+        ]
+    },
+    "footer": [
+        {
+            "title": "About Nintendo",
+            "li": [
+                "Careers",
+                "Corporate Social Responsibility"
+            ],
+            "key": 0
+        },
+        {
+            "title": "Shop",
+            "li": [
+                "Games",
+                "Hardware",
+                "Merchandise",
+                "Sales & deals",
+                "Exclusives",
+                "Online service",
+                "Nintendo NY store"
+            ],
+            "key": 1
+        },
+        {
+            "title": "My Nintendo Store orders",
+            "li": [
+                "Order details",
+                "Shipping info",
+                "Returns & exchanges",
+                "FAQ"
+            ],
+            "key": 2
+        },
+        {
+            "title": "Support",
+            "li": [
+                "Nintendo Switch",
+                "Nintendo Account",
+                "Other systems",
+                "Repairs",
+                "Nintendo product recycling"
+            ],
+            "key": 3
+        },
+        {
+            "title": "Parents",
+            "li": [
+                "Info for parents",
+                "Parental controls"
+            ],
+            "key": 4
+        },
+        {
+            "title": "Privacy",
+            "li": [
+                "Privacy policy",
+                "Cookies and interest-based ads"
+            ],
+            "key": 5
+        },
+        {
+            "title": "Community",
+            "li": [
+                "Community guidelines",
+                "Online safety principles"
+            ],
+            "key": 6
+        }
+    ],
+    "navbar": [
+        {
+            "key": 1,
+            "title": "My Nintendo Store",
+            "icon": 0,
+            "li": [
+                "Shop all",
+                {
+                    "title": "Games",
+                    "li2": [
+                        "Shop all games",
+                        "Nintendo Switch games",
+                        "New releases",
+                        "Sales & deals"
+                    ]
+                },
+                {
+                    "title": "Hardware",
+                    "li2": [
+                        "Shop all hardware",
+                        "Nintendo Switch systems",
+                        "Joy-Con & controllers",
+                        "Cases & more",
+                        "Replacement parts"
+                    ]
+                },
+                {
+                    "title": "Merchandise",
+                    "li2": [
+                        "Shop all merchandise",
+                        "Apparel & accessories",
+                        "Home & office",
+                        "Plush",
+                        "Toys"
+                    ]
+                },
+                {
+                    "title": "Store exclusives",
+                    "li2": [
+                        "Shop all exclusives",
+                        "Exclusive products",
+                        "My Nintendo rewards",
+                        "Nintendo Switch Online offers"
+                    ]
+                },
+                {
+                    "title": "Characters",
+                    "li2": [
+                        "Shop all characters",
+                        "Pikmin",
+                        "Splatoon",
+                        "Super Mario",
+                        "The Legend of Zelda"
+                    ]
+                }
+            ]
+        },
+        {
+            "key": 2,
+            "title": "Games",
+            "icon": 1,
+            "li": [
+                "Nintendo Switch games",
+                "New releases",
+                "Coming soon",
+                "Shop games"
+            ]
+        },
+        {
+            "key": 3,
+            "title": "Nintendo Switch",
+            "icon": 2,
+            "li": [
+                "Nintendo Switch lineup",
+                "Compare systems",
+                "Online service",
+                "Accessories",
+                "Shop systems"
+            ]
+        },
+        {
+            "key": 4,
+            "icon": 3,
+            "title": "News & Events"
+        },
+        {
+            "key": 5,
+            "icon": 4,
+            "title": "Play Nintendo",
+            "li": [
+                "For kids",
+                "For parents"
+            ]
+        }
+    ],
+    "dropdown": [
+        {
+            "key": 1,
+            "title": "Games",
+            "iconsIndex": 0,
+            "icon": "assets/dropdown/controller.svg",
+            "li": [
+                "New releases",
+                "Sales & deals",
+                "Sales & deals"
+            ]
+        },
+        {
+            "key": 2,
+            "title": "Hardware",
+            "iconsIndex": 1,
+            "li": [
+                "Nintendo Switch systems",
+                "Joy-Con & controllers",
+                "Cases & more",
+                "Replacement parts"
+            ]
+        },
+        {
+            "key": 3,
+            "title": "Merchandise",
+            "iconsIndex": 2,
+            "li": [
+                "Apparel & accessories",
+                "Home & office",
+                "Plush",
+                "Toys"
+            ]
+        },
+        {
+            "key": 4,
+            "title": "Store exclusives",
+            "iconsIndex": 3,
+            "li": [
+                "Exclusive products",
+                "My Nintendo rewards",
+                "Nintendo Switch Online offers"
+            ]
+        },
+        {
+            "key": 5,
+            "title": "Characters",
+            "iconsIndex": 4,
+            "li": [
+                "Pikmin",
+                "Splatoon",
+                "Super Mario",
+                "The Legend of Zelda"
+            ]
+        },
+        {
+            "key": 6,
+            "iconsIndex": 5,
+            "title": "Sales & deals"
+        }
+    ],
+    "dropdownGames": [
+        {
+            "key": 0,
+            "title": "Nintendo Switch games",
+            "img": "assets/dropdown/switch.svg"
+        },
+        {
+            "key": 1,
+            "title": "New releases",
+            "img": "assets/dropdown/releases.svg"
+        },
+        {
+            "key": 2,
+            "title": "Coming soon",
+            "img": "assets/dropdown/comingSoon.svg"
+        },
+        {
+            "key": 3,
+            "title": "Shop games",
+            "img": "assets/dropdown/controller.svg"
+        }
+    ],
+    "dropdownNintendoSwitch": [
+        {
+            "key": 0,
+            "title": "Nintendo Switch lineup",
+            "img": "assets/dropdown/lineup.avif"
+        },
+        {
+            "key": 1,
+            "title": "Compare systems",
+            "img": "assets/dropdown/compare.svg"
+        },
+        {
+            "key": 2,
+            "title": "Online service",
+            "img": "assets/dropdown/online.svg"
+        },
+        {
+            "key": 3,
+            "title": "Accesories",
+            "img": "assets/dropdown/accessories.avif"
+        },
+        {
+            "key": 4,
+            "title": "Shop systems",
+            "img": "assets/dropdown/shopSystem.avif"
+        }
+    ],
+    "dropdownPlayNintendo": [
+        {
+            "key": 0,
+            "title": "For kids",
+            "img": "assets/dropdown/kids.svg"
+        },
+        {
+            "key": 1,
+            "title": "For parents",
+            "img": "assets/dropdown/parents.svg"
+        }
+    ]
+}

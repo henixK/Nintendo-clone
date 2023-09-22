@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General */
+
+body {
+  @apply font-lato text-[#484848]
+}
+
+hr {
+  @apply border-[0.5px] border-[#dadada] my-6
+}
+
+span {
+  @apply text-xs font-bold
+}
+
+span:hover {
+  @apply text-red-600
+}
+
+h1 {
+  @apply text-xl lg:text-3xl font-bold
+}
+
+h2 {
+  @apply text-lg lg:text-[21px] font-bold
+}
+
+p {
+  @apply font-thin
+}
+
+li {
+  @apply text-red-600 text-sm
+}
+
+.btn {
+  @apply cursor-pointer text-base font-bold lg:mt-0 w-full p-3 text-white rounded-md lg:min-w-[150px] lg:max-w-[200px] -z-10;
+  background-color: #E60012;
+
+}
+
+.btn:hover {
+  animation: btnAnimation 5000ms linear normal forwards;
+  @apply bg-red-800
+}
+
+/* Animation Button */
+@keyframes btnAnimation {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  50% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+
+svg {
+  @apply w-full
+}
+
+
+article:hover img {
+  @apply opacity-70
+}
+
+article:hover h2 {
+  @apply text-red-500
+}
+
+article:hover a {
+  @apply text-red-900 opacity-80 border-red-900
+}
+
+
+.paddle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4em;
+}
+
+.left-paddle {
+  @apply bg-black opacity-40 rounded-r-md z-0;
+  left: 0;
+}
+
+.right-paddle {
+  @apply bg-black opacity-40 rounded-l-md;
+  right: 0;
+}
+
+.right-paddle:hover,
+.left-paddle:hover {
+  @apply opacity-70 fill-white
+}
+
+.animation {
+  transition: height 0.3s ease;
+  transform-origin: top center;
+}
+
+
+/* Apertura drodown */
+.open{
+  animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+
+.closed {
+  animation: shrinkUp 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+/* Animazione di chiusura */
+@keyframes shrinkUp {
+  0% {
+      transform: scaleY(1);
+  }
+  100% {
+      transform: scaleY(0);
+  }
+}
+
