@@ -198,6 +198,16 @@
                 "For kids",
                 "For parents"
             ]
+        },
+        {
+            "key": 6,
+            "icon": 5,
+            "title": "Support"
+        },
+        {
+            "key": 7,
+            "icon": "assets/FlagUsaIconRegionSelect.jpg",
+            "title": "Change Region"
         }
     ],
     "dropdown": [

@@ -1,4 +1,4 @@
-import America from "../../public/assets/FlagUsaIconRegionSelect.webp";
+import America from "../../public/assets/FlagUsaIconRegionSelect.jpg";
 import {
     Search,
     Heart,
@@ -18,7 +18,7 @@ import { useState } from "react";
 import Data from "../../public/data.json";
 import NavButton from "./NavButton";
 
-const iconMap = [<MarioHat />, <Dpad />, <Switch />, <News />, <Star />];
+const iconMap = [<MarioHat />, <Dpad />, <Switch />, <News />, <Star />, <Support />];
 
 const NavSvg = ({ svg, onClick }) => {
     return (
@@ -38,34 +38,42 @@ export default function NavMobile() {
     };
     const Dropdown = () => {
         return (
-            <section className="absolute bottom-0 rounded-3xl bg-white w-full min-h-[400px] max-h-[400px] -z-[1] border-2 overflow-hidden">
-                <div className="text-center py-4 border-b text-[#484848] bg-white ">
-                    <h1>Menu</h1>
-                </div>
-                <div className="border-2 border-green-500 overflow-scroll min-h-[800px]">
-                    <ul className="flex flex-col text-black bg-white">
-                        {/* Add more content to exceed the container's height */}
-                        {Data.navbar.map((data) => (
-                            <li
-                                className="flex items-center gap-2 text-lg text-[#484848] border-b px-5 py-3"
-                                key={data.key}
-                            >
-                                <span className="text-lg text-primary-color">
-                                    {iconMap[data.icon]}
-                                </span>
-                                {data.title}
-                            </li>
-                        ))}
-                    </ul>
-                    <div></div>
-                    <div className="flex flex-col">
-                        <div className="border-2 border-black">ciao</div>
-                        <div className="border-2 border-black">ciao</div>
-                        <div className="border-2 border-black">ciao</div>
-                        <div className="border-2 border-black">ciao</div>
-                        <div className="border-2 border-black">ciao</div>
+            <section className="absolute bottom-0 rounded-3xl bg-white w-full h-[60vh] -z-[1] border">
+                <div className="relative">
+                    <div className="absolute inset-0">
+                        <div className="text-center py-4 border-b text-[#484848] bg-white rounded-t-3xl">
+                            <h1>Menu</h1>
+                        </div>
+                        <ul className="overflow-y-scroll bg-slate-300 bg-opacity-30 h-[45vh]">
+                            {Data.navbar.filter(item => item.key <= 5).map((data) => (
+                                <li
+                                    className="flex items-center gap-2 text-base font-bold bg-white text-[#484848] border-b px-5 py-3"
+                                    key={data.key}
+                                >
+                                    <span className="text-lg text-primary-color">
+                                        {iconMap[data.icon]}
+                                    </span>
+                                    {data.title}
+                                </li>
+                            ))}
+                            <div className="mt-5 mb-10">
+                                {Data.navbar.filter(item => item.key === 6).map(data => (
+                                    <li className="bg-white flex text-base font-bold items-center gap-2 text-[#484848] border-y px-5 py-3" key={data.key}>
+                                        <span className="text-lg text-primary-color">
+                                            {iconMap[data.icon] || [data.icon]}
+                                        </span>
+                                        {data.title}
+                                    </li>
+                                ))}
+                                <li className="bg-white flex text-base font-bold items-center gap-2 text-[#484848] border-b px-5 py-3">
+                                    <span><img src={America} alt="" /></span>Change Region
+                                </li>
+                            </div>
+                        </ul>
                     </div>
+
                 </div>
+
             </section>
         );
     };

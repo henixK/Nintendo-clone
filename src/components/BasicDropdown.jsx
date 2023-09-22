@@ -38,7 +38,7 @@ export default function BasicDropdown({
       </a>
 
       {toggleDropdown && (
-        <div className=" absolute left-0 w-screen mt-2 z-50">
+        <div className="absolute left-0 w-screen mt-2 z-50">
           <div className="relative">
             <div className={`z-[99] absolute w-screen left-0 top-0`}>
               <div className="relative z-10">{dropdownContent}</div>
