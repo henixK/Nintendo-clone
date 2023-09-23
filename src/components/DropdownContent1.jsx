@@ -3,11 +3,12 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 import Data from "../../public/data.json";
 import { useState } from "react";
 import { Tshirt, SalesTag, ControllerIcon, Dpad, Character, Star2 } from "@acme/icons";
+import { Drawer } from "@mui/material";
 
 
 const iconMap = [
     <Dpad />,
-    <ControllerIcon  />,
+    <ControllerIcon />,
     <Tshirt />,
     <Star2 />,
     <Character />,
@@ -35,7 +36,6 @@ const Menu = ({ icon, title, li }) => {
 export default function DropdownContent1({ onClose }) {
     const [isOpen, setIsOpen] = useState(true);
 
-    // Gestisce la chiusura del dropdown e chiama la funzione di chiusura personalizzata se fornita
     const handleClose = () => {
         setIsOpen(false);
         if (onClose) {
@@ -43,9 +43,11 @@ export default function DropdownContent1({ onClose }) {
         }
     };
     return (
-        <section className="py-[9.5rem] bg-white relative">
-            <div className="absolute w-screen h-screen border-2 bg-black opacity-30 top-22 border-black -z-20 "></div>
-            <div className="z-[99]">
+
+
+        <section className="h-[300px] bg-white absolute w-screen top-8 left-0 mt-2 z-[2]">
+{/*             <div className="absolute w-screen h-screen border-2 bg-black opacity-30 top-22 border-black  -z-[1] "></div> */}
+            <div className="z-[99] absolute inset-0">
                 <div className="w-full h-[60px] bg- bg-primary-color text-white text-center absolute top-0">
                     <div className="mt-4 flex justify-center">
                         <img src={nintendoStore} alt="" />
@@ -60,8 +62,9 @@ export default function DropdownContent1({ onClose }) {
                             </div>
                         </div>
                     )}
+                    <div className="bg-triangle h-8 bg-repeat-x absolute w-full mt-[1.18rem]"></div>
                 </div>
-                <div className="bg-triangle py-[7px] absolute w-full -mt-[5.8rem]"></div>
+                
                 <div className=" absolute w-full top-20 flex justify-center gap-12">
                     {Data.dropdown.map((data) => (
                         <Menu
@@ -89,5 +92,6 @@ export default function DropdownContent1({ onClose }) {
                 </div>
             </div>
         </section>
+
     );
 }
