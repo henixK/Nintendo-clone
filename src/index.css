@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+  --speed: 500ms; 
+}
+
 /* General */
 
 body {
@@ -160,26 +165,30 @@ article:hover a {
   }
 }
 
+.mobile {
+  @apply cursor-pointer flex items-center gap-2 text-base font-bold bg-white text-[#484848] border-b px-5 py-3 relative;
+}
+
 
 .menu-primary-enter {
   position: absolute;
   transform: translateX(-110%);
 }
 .menu-primary-enter-active {
-  transform: translateX(0%);
+  transform: translateX(20%);
   transition: all var(--speed) ease;
 }
 .menu-primary-exit {
   position: absolute;
 }
 .menu-primary-exit-active {
-  transform: translateX(-110%);
+  transform: translateX(-100%);
   transition: all var(--speed) ease;
 }
 
 
 .menu-secondary-enter {
-  transform: translateX(110%);
+  transform: translateX(100%);
 }
 .menu-secondary-enter-active {
   transform: translateX(0%);
@@ -187,6 +196,6 @@ article:hover a {
 }
 
 .menu-secondary-exit-active {
-  transform: translateX(110%);
+  transform: translateX(100%);
   transition: all var(--speed) ease;
 }

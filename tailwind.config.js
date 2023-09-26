@@ -18,6 +18,7 @@ export default {
       },
       colors: {
         'primary-color': '#E60012',
+        'secondary-color': '#484848', 
       }
     },
     animation: {

@@ -9,10 +9,14 @@ export const NavItem = ({ svgIcon, text }) => {
     );
 };
 
-export const NavSvg = ({ svg, onClick }) => {
+export const NavSvg = ({ svg, onClick, children, open }) => {
     return (
-        <a onClick={onClick} className="text-2xl cursor-pointer relative">
-            {svg}
-        </a>
+        <li>
+            <a onClick={onClick} className="text-2xl cursor-pointer relative text-secondary-color">
+                {svg}
+            </a>
+            {open && children}
+        </li>
+
     );
 };
