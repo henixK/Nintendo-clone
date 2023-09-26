@@ -10,7 +10,8 @@
 /* General */
 
 body {
-  @apply font-lato text-[#484848]
+  @apply font-lato text-[#484848];
+  font-family: 'Lato', Helvetica, sans-serif;
 }
 
 hr {
