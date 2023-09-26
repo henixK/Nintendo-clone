@@ -10,7 +10,7 @@ export default {
         '7': 'repeat(7, minmax(0, 1fr))',
       },
       fontFamily: {
-        'lato': ["lato"]
+        'lato': ["Lato"]
       },
       backgroundImage: {
         'hero': "url('../public/assets/hero/198x185_SMBW_bg.avif')",
